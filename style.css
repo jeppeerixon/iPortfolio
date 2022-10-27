@@ -1,0 +1,67 @@
+body {
+    margin: 50px;
+}
+
+.meny, .header, .portfolio, .workXp, .schoolXp, .placeHolder {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.5rem; 
+    box-shadow: 5px 7.5px 10px rgba(0, 0, 0, 0.75)
+}
+  
+.meny {
+    grid-area: meny;
+    background-color: rgb(90, 200, 170);
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(225, 110, 110);
+    
+}
+
+.workXp {
+    grid-area: workXp;
+    background-color: rgb(150, 140, 140);
+    
+}
+
+.portfolio {
+    grid-area: portfolio;
+    background-color: rgb(240, 140, 110)
+}
+
+.schoolXp {
+    grid-area: schoolXp;
+    background-color: rgb(150, 140, 140);
+    
+}
+
+.placeHolder {
+    grid-area: placeHolder;
+    background-color: rgb(90, 200, 220);
+}
+
+.container {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas:
+    "header"
+    "meny" /*kanske hamburgare på mobil?*/
+    "workXp"
+    "portfolio"
+    "schoolXp"
+    "placeHolder"
+}
+
+@media only screen and (min-width: 600px)   {
+    .container {
+    grid-gap: 25px;
+    grid-template-columns: 25% auto 25%;
+    grid-template-areas:
+    "meny  header  header"
+    "workXp workXp portfolio"
+    "placeHolder  schoolXp  schoolXp";
+    }
+}
+
