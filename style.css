@@ -7,10 +7,10 @@ body {
 }
 
 .meny, .header, .portfolio, .workXp, .schoolXp, .placeHolder {
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 10px;
     font-size: 1.5rem; 
-    box-shadow: 5px 7.5px 10px rgba(0, 0, 0, 0.75)
+    box-shadow: 5px 7.5px 10px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
 }
   
 .meny {
@@ -21,12 +21,21 @@ body {
 .header {
     grid-area: header;
     background-color: rgb(225, 110, 110);
-    
+    display: grid;
+    grid-template-columns: 0.25fr repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr) 80%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
 .workXp {
     grid-area: workXp;
     background-color: rgb(150, 140, 140);
+    display: grid;
+    grid-template-columns: 0.25fr repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr) 80%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     
 }
 
@@ -38,12 +47,51 @@ body {
 .schoolXp {
     grid-area: schoolXp;
     background-color: rgb(150, 140, 140);
+    display: grid;
+    grid-template-columns: 0.25fr repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr) 80%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     
 }
 
 .placeHolder {
     grid-area: placeHolder;
     background-color: rgb(90, 200, 220);
+}
+
+.icon1, .h2, .h3 {
+    background-color: rgb(220, 140, 140);
+    margin: 0px;
+}
+
+.icon1 { 
+    grid-area: 1 / 1 / 5 / 2;
+    text-align: center;
+    padding: 3px 0;
+    
+}
+
+.h2 { 
+    grid-area: 1 / 2 / 3 / 4; 
+    font-size: 1rem;
+    margin: 0px;
+    padding-bottom: 15px;
+}
+
+.h3 { 
+    grid-area: 3 / 2 / 5 / 4; 
+    font-size: 0.75rem;
+    font-weight: lighter;
+    margin: 0px;
+    padding-bottom: 15px;
+}
+
+.p4 { 
+    grid-area: 5 / 1 / 6 / 4; 
+    font-size: 0.75rem;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .container {
