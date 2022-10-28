@@ -1,5 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    margin: 50px;
+    margin: 25px;
 }
 
 .meny, .header, .portfolio, .workXp, .schoolXp, .placeHolder {
@@ -43,7 +47,12 @@ body {
 }
 
 .container {
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 90vh;
     grid-gap: 15px;
     grid-template-areas:
     "header"
@@ -51,7 +60,7 @@ body {
     "workXp"
     "portfolio"
     "schoolXp"
-    "placeHolder"
+    "placeHolder";
 }
 
 @media only screen and (min-width: 600px)   {
@@ -62,6 +71,8 @@ body {
     "meny  header  header"
     "workXp workXp portfolio"
     "placeHolder  schoolXp  schoolXp";
+    min-width: 500px;
+    max-width: 1024px;
     }
 }
 
