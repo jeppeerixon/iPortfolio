@@ -8,7 +8,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
 
 body {
     margin: 25px;
@@ -32,6 +32,14 @@ body {
     grid-row-gap: 0px;
 }
 
+.meny .icon1 {
+    background-color: transparent;
+}
+
+.meny .smallH2 {
+    background-color: transparent;
+}
+
 .header {
     grid-area: header;
     background-color: white;
@@ -40,6 +48,25 @@ body {
     grid-template-rows: repeat(4, 1fr) 80%;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
+
+.header .p4 {
+    position: relative;
+}
+
+.header .p4 {
+    padding-top: 20px;
+    padding-right: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.headerImg {
+    position: absolute;
+    height: 150px;
+    width: auto;
+    right: 0px;
+    bottom: 0px;
 }
 
 .workXp {
@@ -61,6 +88,19 @@ body {
     grid-template-rows: repeat(4, 1fr) 80%;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
+
+.portfolio .p4 {
+    padding: 0px;
+    position: relative;
+}
+
+.portfolio .p4 img {
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
 }
 
 .schoolXp {
@@ -131,15 +171,36 @@ body {
 }
 
 .p4 li {
-    color: blueviolet;
-    margin: 10px 40px;
+    margin: 10px 20px;
     align-self: center;
 }
 
-aside li:before { 
-    content: '\1F95E'; 
+aside li:nth-child(1)::before { 
+    content: '\1F4E7'; 
     margin-left: -20px; 
     margin-right: 10px; 
+    font-size: 1rem;
+}
+
+aside li:nth-child(2)::before { 
+    content: '\1F4DE'; 
+    margin-left: -20px; 
+    margin-right: 10px; 
+    font-size: 1rem;
+}
+
+aside li:nth-child(3)::before { 
+    content: '\1F4CB'; 
+    margin-left: -20px; 
+    margin-right: 10px; 
+    font-size: 1rem;
+}
+
+aside li:nth-child(4)::before { 
+    content: '\1F916'; 
+    margin-left: -20px; 
+    margin-right: 10px; 
+    font-size: 1rem;
 }
 
 .container {
