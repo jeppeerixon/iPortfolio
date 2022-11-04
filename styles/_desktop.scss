@@ -1,0 +1,40 @@
+@media only screen and (min-width: 700px)   {
+.container {
+    grid-gap: 25px;
+    grid-template-columns: 256px auto 256px;
+    grid-template-areas:
+    "meny  header  header"
+    "workXp workXp portfolio"
+    "contact  schoolXp  schoolXp";
+    min-width: 500px;
+    max-width: 1024px;
+    min-height: 94vh;
+}
+
+.portfolio {
+    grid-area: portfolio;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 0.10fr 1fr;
+    grid-template-rows: repeat(4, 15px) auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-height: 300px;
+}
+
+.contact li {
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
+.p4Meny li:nth-child(even) {
+    flex: 1 1 50%;
+}
+
+.p4Meny li:nth-child(odd) {
+    flex: 0 0 50%; 
+}
+
+
+    
+}
