@@ -4,37 +4,30 @@
     font-family: 'Rubik', sans-serif;
 }
 
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
 }
-    
-/* Track */
+
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
 }
-    
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: rgb(222, 244, 255);
     border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: blue;
 }
 
 html {   
-    background-image: url("/img/icloudbg_1.jpg");
-  
+    background-image: url("/img/icloudbg_1.jpg");  
     min-height: 100vh; 
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 body {
@@ -225,7 +218,6 @@ body {
     border-style: none;
 }
 
-
 .contact {
     grid-area: contact;
     background-color: white;
@@ -331,25 +323,25 @@ aside li:nth-child(1) {
     line-break: anywhere;
 }
 
-aside li:nth-child(1)::before { 
-    content: '\1F4E7'; 
+@mixin newBulletStyle {
     margin-left: -30px; 
     margin-right: 10px; 
     font-size: 1rem;
+}
+
+aside li:nth-child(1)::before { 
+    content: '\1F4E7'; 
+    @include newBulletStyle;
 }
 
 aside li:nth-child(2)::before { 
     content: '\1F4DE'; 
-    margin-left: -30px; 
-    margin-right: 10px; 
-    font-size: 1rem;
+    @include newBulletStyle;
 }
 
 aside li:nth-child(3)::before { 
     content: '\1F4CB'; 
-    margin-left: -30px; 
-    margin-right: 10px; 
-    font-size: 1rem;
+    @include newBulletStyle;
 }
 
 aside li:nth-child(4) {
@@ -358,9 +350,7 @@ aside li:nth-child(4) {
 
 aside li:nth-child(4)::before { 
     content: '\1F916'; 
-    margin-left: -30px; 
-    margin-right: 10px; 
-    font-size: 1rem;
+    @include newBulletStyle;
 }
 
 .container {
