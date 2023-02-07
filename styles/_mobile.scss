@@ -62,6 +62,12 @@ body {
     background-color: transparent;
 }
 
+.meny {
+    button {
+        font-size: 0.75rem; 
+    }
+}
+
 .header {
     grid-area: header;
     background-color: white;
