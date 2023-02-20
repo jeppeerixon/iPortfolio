@@ -111,7 +111,7 @@ body {
 
 .header .p4 {
     position: relative;
-    font-size: clamp(0.75rem, 2vw, 1.5rem);
+    font-size: clamp(0.75rem, 2vw, 1.1rem);
 }
 
 .header .p4 {
@@ -142,10 +142,16 @@ body {
 }
 
 .workXp .p4 {
-    overflow-y: auto;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    position: relative;
+    font-size: clamp(0.75rem, 2vw, 1.1rem);
 }
+
+.workXp a {
+    color: black;
+    text-decoration: underline;
+}
+
+
 
 .workXp li {
     margin: 10px 20px 5px 40px;
@@ -215,9 +221,13 @@ body {
 }
 
 .schoolXp .p4 {
-    overflow-y: auto;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    position: relative;
+    font-size: clamp(0.75rem, 2vw, 1.1rem);
+}
+
+.schoolXp a {
+    color: black;
+    text-decoration: underline;
 }
 
 .schoolXp li:nth-child(4) {
